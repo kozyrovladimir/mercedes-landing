@@ -1,0 +1,26 @@
+#preloader
+{
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: black;
+}
+
+#status
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 90px;
+  height: 90px;
+  margin: -45px 0 0 -45px;
+
+  background-image: url('./../../images/preloader/5.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}

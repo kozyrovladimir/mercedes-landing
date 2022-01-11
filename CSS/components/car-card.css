@@ -1,0 +1,81 @@
+@import "./button.css";
+
+.car-card
+{
+  font-family: Times New Roman, serif;
+
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+
+  width: 16em;
+  height: 18em;
+
+  transition: 600ms;
+
+  justify-content: center;
+}
+
+.car-card__title,
+.car-card__type,
+.car-card__price
+{
+  margin: .2em;
+}
+
+.car-card__title
+{
+  font-size: 1.2rem;
+}
+
+.car-card__type
+{
+  color: rgba(0, 0, 0, .62);
+}
+
+.car-card__price
+{
+  font-weight: bold;
+
+  color: #288ebc;
+}
+
+.car-card__position
+{
+  margin: 0 1em;
+}
+
+.car-card:hover
+{
+  transform: scale(1.1) translateY(-2em);
+
+  border-radius: .4em;
+  box-shadow: 0 0 1em 0 rgba(0,0,0,.75);
+}
+
+.car-card:hover .button-position
+{
+  margin-left: 1em;
+
+  transition: 800ms;
+}
+
+.button-position
+{
+  margin-top: 1em;
+  margin-left: -8em;
+}
+
+@media screen and (max-width: 960px)
+{
+  .button-position
+  {
+    margin-left: 1em;
+  }
+  .car-card:hover
+  {
+    transform: none;
+
+    box-shadow: none;
+  }
+}

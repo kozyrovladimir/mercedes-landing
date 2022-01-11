@@ -1,0 +1,118 @@
+@import './../components/header.css';
+@import './../components/contacts.css';
+@import './../components/footer.css';
+@import './../components/car-characteristics.css';
+@import './../components/preloader.css';
+
+body
+{
+  background-color: black;
+}
+
+.wrapper
+{
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+
+  background-color: white;
+}
+
+.top-line
+{
+  border-bottom: 2px solid gray;
+}
+
+.bottom-line
+{
+  margin-top: 1.5em;
+
+  border-bottom: 2px solid gray;
+}
+
+.car-description img
+{
+  width: 100%;
+}
+
+.car-description__title
+{
+  font-size: 1.5em;
+
+  display: block;
+
+  margin: 0 auto;
+  padding: 1.5em 0;
+
+  text-align: center;
+
+  color: white;
+  background-color: black;
+}
+
+.car-description__information h3
+{
+  padding-top: 1em;
+
+  text-align: center;
+}
+
+.car-description__case
+{
+  display: flex;
+  flex-direction: row;
+
+  margin: .5em 1em;
+}
+
+.car-description__text
+{
+  padding: .5em;
+
+  flex: 7;
+}
+
+.car-description__image
+{
+  flex: 4;
+}
+
+.car-description__image img
+{
+  width: 100%;
+}
+
+.reverse
+{
+  flex-direction: row-reverse;
+
+  padding-bottom: 1em;
+}
+
+.mix-color
+{
+  background-color: #f9f9f9;
+}
+
+.car-characteristics__title
+{
+  display: block;
+
+  margin-left: 2em;
+}
+
+.car-characteristics__text
+{
+  font-family: Tahoma, sans-serif;
+}
+
+@media screen and (max-width: 960px)
+{
+  .car-description__case
+  {
+    flex-direction: column;
+  }
+}
